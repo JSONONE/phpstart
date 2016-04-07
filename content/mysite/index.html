@@ -1,0 +1,24 @@
+<html>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>
+		我的第一个网页
+	</title>
+	<body>
+<form action="my.php" method="get">
+  <p>First name: <input type="text" name="uname" /></p>
+  <p>Last name: <input type="password" name="pwd" /></p>
+  <input type="submit" value="Submit" />
+</form>
+
+	</body>
+</html>
+
+<?php
+
+echo "登陆成功";
+
+echo $_GET["uname"];
+echo "<p>";
+echo $_GET["pwd"];
+
+?>
